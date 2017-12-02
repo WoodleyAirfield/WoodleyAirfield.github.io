@@ -10,7 +10,7 @@ body {
   padding-top: 6rem;
   padding-bottom: 6rem;
   margin-bottom: 0;
-  background-color: #fff;
+  background-color: rgb(194, 194, 194);
 }
 
 .jumbotron p:last-child {
@@ -29,7 +29,7 @@ body {
   min-height: 50rem; /* Can be removed; just added for demo purposes */
   padding-top: 3rem;
   padding-bottom: 3rem;
-  background-color: #f7f7f7;
+  background-color: #fffafa;
 }
 
 .card {
@@ -44,9 +44,26 @@ body {
   margin-bottom: .75rem;
 }
 
+#scottModal img {
+  clip-path: inset(0px 150px 0px 5px);
+  height: auto; 
+  width: auto; 
+  max-width: none; 
+  max-height: none;
+}
+
+
+.modal-body img {
+  height: auto; 
+  width: auto; 
+  max-width: 300px; 
+  max-height: 250px;
+}
+
 .card-text {
   font-size: 85%;
 }
+
 
 footer {
   padding-top: 3rem;
@@ -56,3 +73,8 @@ footer {
 footer p {
   margin-bottom: .25rem;
 }
+
+#map {
+  height: 400px;
+  width: 100%;
+ }

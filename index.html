@@ -24,12 +24,12 @@
           <div class="row">
             <div class="col-sm-8 py-4">
               <h4 class="text-white">About</h4>
-              <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+              <p class="text-muted">Woodleys airfield history is long and interesting , there are many things to look , study and learn about.</p>
             </div>
             <div class="col-sm-4 py-4">
               <h4 class="text-white">Contact</h4>
               <ul class="list-unstyled">
-                <li><a href="#" class="text-white">Follow on Twitter</a></li>
+                <li><a href="https://twitter.com/MLGturtleGaming" class="text-white">Follow on Twitter</a></li>
                 <li><a href="#" class="text-white">Like on Facebook</a></li>
                 <li><a href="#" class="text-white">Email me</a></li>
               </ul>
@@ -59,6 +59,21 @@
 
       <div class="album text-muted">
         <div class="container" > 
+
+            <div id="map"></div>
+            <script>
+              function initMap() {
+                var uluru = {lat: 51.452876, lng: -0.886732}; 
+                var map = new google.maps.Map(document.getElementById('map'), {
+                  zoom: 16,
+                  center: uluru
+                });
+                var marker = new google.maps.Marker({
+                  position: uluru,
+                  map: map
+                });
+              }
+            </script>
 
         <!--Beaver Way  !-->
         <div class="row">
@@ -117,6 +132,35 @@
             </div>  
         </div>
      
+        <!--Mitchell  !-->
+        <div class="row">
+          <div class="card" >
+            <a href="#" data-toggle="modal" data-target="#mitchellModal">
+            <img class="card-img" src="images/mitchell.jpg" alt="Mitchell Way">
+            </a>
+          </div>
+          <div class="modal fade" id="mitchellModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"> 
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="titleId">Mitchell Way</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    </p> The Kittiwake was a small two seater aircraft designed for amateur building. It was created by Mitchell-Procter.</p>
+                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Mitchell_Kittiwake_1_G-ATXN_ABIN_11.05.03R_edited-2.jpg/320px-Mitchell_Kittiwake_1_G-ATXN_ABIN_11.05.03R_edited-2.jpg">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+          </div>  
+        </div>
+
+
         <!--Hurricane Way  !-->
         <div class="row">
             <div class="card" >
@@ -144,29 +188,122 @@
                 </div>
             </div>  
         </div>
-     
+        
+        <!--Scott Close  !-->
+        <div class="row">
+          <div class="card" >
+            <a href="#" data-toggle="modal" data-target="#scottModal">
+            <img class="card-img" src="images/scott.jpg" alt="Scott Close">
+            </a>
+          </div>
+          <div class="modal fade" id="scottModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"> 
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="titleId">Scott Close</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    </p> Sheila Scott was a famous British pilot, she was a demonstator for Cessna and Piper. </p>
+                     <p> Scott broke over 100 aviation records between 1965 and 1972; from being the first British person to fly over the North Pole in a small aircraft to being the first British pilot to fly solo across the world. Scott passed away in 1988 but she has left a lasting legacy for British women interested in aviation. </p>
+                     <img src="http://www.pilotweb.aero/polopoly_fs/1.4130849!/image/image.jpg_gen/derivatives/landscape_630/image.jpg">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+          </div>  
+        </div>
+      
+         
+        <!--Shackleton Way  !-->
+        <div class="row">
+          <div class="card" >
+            <a href="#" data-toggle="modal" data-target="#shackletonModal">
+            <img class="card-img" src="images/shackleton.jpg" alt="Shackleton Way">
+            </a>
+          </div>
+          <div class="modal fade" id="shackletonModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"> 
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="titleId">Shackleton Way</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    </p> The Avro Shackleton was a British long-range maritime patrol aircraft.</p>
+                    <p>The Shackleton was developed during the late 1940s as part of Britain's military response to the rapid expansion of the Soviet Navy, in particular its submarine force.</p>
+                     <img src="https://upload.wikimedia.org/wikipedia/commons/7/76/Avro_Shackleton_MR3_in_flight_c1955.jpg">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+          </div>  
+      </div>
 
-          
-          <div class="row">    
-            <div class="card">
-              <img class="card-img-top"src="images/scott.jpg" alt="">
-            </div>
+        <!--Tiger  !-->
+        <div class="row">
+          <div class="card" >
+            <a href="#" data-toggle="modal" data-target="#tigerModal">
+            <img class="card-img" src="images/tiger.jpg" alt="Tiger Close">
+            </a>
+          </div>
+          <div class="modal fade" id="tigerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"> 
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="titleId">Tiger Close</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    </p> The Hawker Hurricane is a British single-seat fighter aircraft of the 1930s–1940s that was designed and predominantly built by Hawker Aircraft Ltd for the Royal Air Force (RAF).</p>
+                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Hurricane_mk1_r4118_fairford_arp.jpg/320px-Hurricane_mk1_r4118_fairford_arp.jpg">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
           </div>  
-          <div class="row">  
-            <div class="card">
-              <img class="card-img-top"src="images/shackleton.jpg" alt="Beaver Way">
-            </div>
+      </div>
+        
+        <!--Victor  !-->
+        <div class="row">
+          <div class="card" >
+            <a href="#" data-toggle="modal" data-target="#victorModal">
+            <img class="card-img" src="images/victor.jpg" alt="Victor Way">
+            </a>
+          </div>
+          <div class="modal fade" id="victorModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"> 
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="titleId">Victor Way</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    </p> The Hawker Hurricane is a British single-seat fighter aircraft of the 1930s–1940s that was designed and predominantly built by Hawker Aircraft Ltd for the Royal Air Force (RAF).</p>
+                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Hurricane_mk1_r4118_fairford_arp.jpg/320px-Hurricane_mk1_r4118_fairford_arp.jpg">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
           </div>  
-          <div class="row">  
-            <div class="card">
-              <img class="card-img-top"src="images/tiger.jpg" alt="Beaver Way">
-            </div>
-          </div>  
-          <div class="row">  
-            <div class="card">
-              <img class="card-img-top"src="images/victor.jpg" alt="Beaver Way">
-            </div>
-          </div>  
+      </div>
+    
  
         </div>
       </div>
@@ -185,6 +322,9 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxCqW0sGrVyNw_sW2tqhQQdw70rZjvJhs&callback=initMap">
+    </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="js/vendor/popper.min.js"></script>
@@ -196,6 +336,7 @@
         fg: '#eceeef',
         text: 'Thumbnail'
       });
+
     </script>
   </body>
 </html>
