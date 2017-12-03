@@ -44,7 +44,7 @@ body {
   margin-bottom: .75rem;
 }
 
-#scottModal img {
+#scsottModal img {
   clip-path: inset(0px 150px 0px 5px);
   height: auto; 
   width: auto; 
@@ -56,8 +56,8 @@ body {
 .modal-body img {
   height: auto; 
   width: auto; 
-  max-width: 270px; 
-  max-height: 250px;
+  max-width: 330px; 
+  max-height: 350px;
 }
 
 .card-text {
