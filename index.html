@@ -60,11 +60,10 @@
       <div class="album text-muted">
         <div class="container" > 
 
-            <div id="map"></div>
-            <script>
+        <div id="map">
+              <script>
               function initMap() {
                 var uluru = {lat: 51.452876, lng: -0.886732}; 
-                var uluru = {lat: 50.452876, lng: 0.886732};
                 var map = new google.maps.Map(document.getElementById('map'), {
                   zoom: 16,
                   center: uluru
@@ -75,10 +74,42 @@
                   map: map
                 });
               }
-            </script>
-
-        <!--Beaver Way  !-->
+              </script>
+        </div>
+       
+        <!--Armstrong  !-->
         <div class="row">
+            <div class="card" >
+              <a href="#" data-toggle="modal" data-target="#armstrongModal">
+              <img class="card-img" src="images/armstrong.jpg" alt="Armstrong Way">
+              </a>
+            </div>
+            <div class="modal fade" id="armstrongModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"> 
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="modalId">Armstrong Way</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Neil Armstrong was the first man to walk on the moon.</p>
+                      <p> He was American , before he was a astronaut he was an engineer , a naval aviator , a test pilot and a university professor.</p>
+                       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Neil_Armstrong_pose.jpg/377px-Neil_Armstrong_pose.jpg">
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>  
+        </div>
+  
+    
+        <!--Beaver Way  !-->
+      <div class="row">
             <div class="card" >
               <a href="#" data-toggle="modal" data-target="#beaverModal">
               <img class="card-img" src="images/beaver.jpg" alt="Beaver Way">
@@ -104,9 +135,38 @@
                 </div>
               </div>
             </div>  
-        </div>
- 
+      </div>
 
+        <!--Blanchard Close !-->
+      <div class="row">
+          <div class="card" >
+            <a href="#" data-toggle="modal" data-target="#blanchardModal">
+            <img class="card-img" src="images/blanchard.jpg" alt="Blanchard Close">
+            </a>
+          </div>
+          <div class="modal fade" id="blanchardModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"> 
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="titleId">Blanchard Close</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Jean-Pierre Blanchard pioneered hot air ballooning.</p>
+                    </p> He made his first succsesful balloon flight in Paris 1784.</p>
+                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Jean_Pierre_Blanchard.jpg/212px-Jean_Pierre_Blanchard.jpg">
+                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Early_flight_02562u_%287%29.jpg/328px-Early_flight_02562u_%287%29.jpg">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+          </div>  
+      </div>
+ 
         <!--Hurricane Way  !-->
         <div class="row">
           <div class="card" >
@@ -140,7 +200,7 @@
         <div class="row">
             <div class="card" >
               <a href="#" data-toggle="modal" data-target="#kittiwakeModal">
-              <img class="card-img" src="images/kittiwake.jpg" alt="Beaver Way">
+              <img class="card-img" src="images/kittiwake.jpg" alt="Kittiwake Close">
               </a>
             </div>
             <div class="modal fade" id="kittiwakeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"> 
@@ -370,8 +430,8 @@
           </div>  
         </div>
     
- 
-        </div>
+      </div>
+      
       </div>
     </main>
 
