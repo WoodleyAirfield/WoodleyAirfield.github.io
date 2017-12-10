@@ -64,7 +64,8 @@
               <script>
               function initMap() {
                 var beaverURL = {lat: 51.452010, lng: -0.882972}; 
-                var wrightURL = {lat: 51.451377, lng: -0.889528};  
+                var wrightURL = {lat: 51.451377, lng: -0.889528}; 
+                var blanchardURL = {lat: 51.457915, lng: -0.883080 };
                 var map = new google.maps.Map(document.getElementById('map'), {
                   zoom: 16,
                   center: beaverURL
@@ -74,12 +75,29 @@
                   title: 'Beaver Way',
                   map: map
                 });
-                var markerWight = new google.maps.Marker({
+                var markerWright = new google.maps.Marker({
                   position: wrightURL,
                   title: 'Wright Close',
                   map: map
                 });
+                var markerBlanchard = new google.maps.Marker({
+                  position: blanchardURL,
+                  title: 'Blanchard Close',
+                  map: map
+                });
+
+                markerBeaver.addListener('click', function() {
+                  $('#beaverModal').modal('show')  
+                });
+                markerWright.addListener('click', function() {
+                  $('#wrightModal').modal('show')  
+                });
+                markerBlanchard.addListener('click', function() {
+                  $('#blanchardModal').modal('show')  
+                });
               }
+
+             
               </script>
           </div>
 
