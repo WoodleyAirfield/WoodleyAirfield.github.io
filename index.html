@@ -63,16 +63,28 @@
           <div id="map">
               <script>
               function initMap() {
+                var armstrongURL = {lat: 51.452019, lng: -0.888252}; 
                 var beaverURL = {lat: 51.452010, lng: -0.882972}; 
                 var wrightURL = {lat: 51.451377, lng: -0.889528}; 
+                var catalinaURL = {lat: 51.454085, lng: -0.880538};
                 var blanchardURL = {lat: 51.457915, lng: -0.883080 };
                 var map = new google.maps.Map(document.getElementById('map'), {
                   zoom: 16,
                   center: beaverURL
                 });
+                var markerArmstrong = new google.maps.Marker({
+                  position: armstrongURL,
+                  title: 'Armstrong Way',
+                  map: map
+                });
                 var markerBeaver = new google.maps.Marker({
                   position: beaverURL,
                   title: 'Beaver Way',
+                  map: map
+                });
+                var markerCatalina = new google.maps.Marker({
+                  position: catalinaURL,
+                  title: 'Catalina Close',
                   map: map
                 });
                 var markerWright = new google.maps.Marker({
@@ -86,6 +98,9 @@
                   map: map
                 });
 
+                markerArmstrong.addListener('click', function() {
+                  $('#armstrongModal').modal('show')  
+                });
                 markerBeaver.addListener('click', function() {
                   $('#beaverModal').modal('show')  
                 });
@@ -94,6 +109,9 @@
                 });
                 markerBlanchard.addListener('click', function() {
                   $('#blanchardModal').modal('show')  
+                });
+                markerCatalina.addListener('click', function() {
+                  $('#catalinaModal').modal('show')  
                 });
               }
 
@@ -188,6 +206,34 @@
               </div>  
           </div>
  
+          <!--Catalina Close !-->
+          <div class="row">
+              <div class="card" >
+                <a href="#" data-toggle="modal" data-target="#catalinaModal">
+                <img class="card-img" src="images/catalina.jpg" alt="Catalina Close">
+                </a>
+              </div>
+              <div class="modal fade" id="catalinaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"> 
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="titleId">Catalina Close</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <p>The Consolidated PBY Catalina, also known as the Canso in Canadian service, was an American flying boat, and later an amphibious aircraft of the 1930s and 1940s produced by Consolidated Aircraft. It was one of the most widely used seaplanes of World War II.</p>
+                        <p>In response to an October 1933 order from the US Navy for a monoplane patrol aircraft, Isaac Laddon of Consolidated Aircraft designed the all metal Model 28 with a number of unique features, including a parasol-mounted wing incorporating internal bracing to reduce the need for external struts, and retractable stabilizing floats that folded upward to become wingtips in flight.</p>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Consolidated_PBY-5A_Catalina_in_flight_c1942.jpg/320px-Consolidated_PBY-5A_Catalina_in_flight_c1942.jpg">
+                       
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+              </div>  
+          </div>
           <!--Hurricane Way  !-->
           <div class="row">
             <div class="card" >
