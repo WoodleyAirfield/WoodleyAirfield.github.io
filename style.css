@@ -1,3 +1,4 @@
+
 body {
   min-height: 75rem; /* Can be removed; just added for demo purposes */
 }
@@ -42,14 +43,8 @@ body {
 
 .card > img {
   margin-bottom: .75rem;
-}
-
-#scsottModal img {
-  clip-path: inset(0px 150px 0px 5px);
-  height: auto; 
-  width: auto; 
-  max-width: none; 
-  max-height: none;
+  max-width: 330px; 
+  max-height: 350px;
 }
 
 
@@ -78,3 +73,5 @@ footer p {
   height: 400px;
   width: 100%;
  }
+
+ 

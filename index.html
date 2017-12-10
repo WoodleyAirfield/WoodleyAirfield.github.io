@@ -39,7 +39,7 @@
       </div>
       <div class="navbar navbar-dark bg-dark">
         <div class="container d-flex justify-content-between">
-          <a href="#" class="navbar-brand">Album</a>
+          <a href="#" class="navbar-brand">Woodley Airfield</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -60,161 +60,192 @@
       <div class="album text-muted">
         <div class="container" > 
 
-        <div id="map">
+          <div id="map">
               <script>
               function initMap() {
-                var uluru = {lat: 51.452876, lng: -0.886732}; 
+                var beaverURL = {lat: 51.452010, lng: -0.882972}; 
+                var wrightURL = {lat: 51.451377, lng: -0.889528};  
                 var map = new google.maps.Map(document.getElementById('map'), {
                   zoom: 16,
-                  center: uluru
+                  center: beaverURL
                 });
-                var marker = new google.maps.Marker({
-                  position: uluru,
-                  title: 'Woodley Airfield',
+                var markerBeaver = new google.maps.Marker({
+                  position: beaverURL,
+                  title: 'Beaver Way',
+                  map: map
+                });
+                var markerWight = new google.maps.Marker({
+                  position: wrightURL,
+                  title: 'Wright Close',
                   map: map
                 });
               }
               </script>
-        </div>
-       
-        <!--Armstrong  !-->
-        <div class="row">
-            <div class="card" >
-              <a href="#" data-toggle="modal" data-target="#armstrongModal">
-              <img class="card-img" src="images/armstrong.jpg" alt="Armstrong Way">
-              </a>
-            </div>
-            <div class="modal fade" id="armstrongModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"> 
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="modalId">Armstrong Way</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      <p>Neil Armstrong was the first man to walk on the moon.</p>
-                      <p> He was American , before he was a astronaut he was an engineer , a naval aviator , a test pilot and a university professor.</p>
-                       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Neil_Armstrong_pose.jpg/377px-Neil_Armstrong_pose.jpg">
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+
+          <!--Armstrong  !-->
+          <div class="row">
+              <div class="card" >
+                <a href="#" data-toggle="modal" data-target="#armstrongModal">
+                <img class="card-img" src="images/armstrong.jpg" alt="Armstrong Way">
+                </a>
+              </div>
+              <div class="modal fade" id="armstrongModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"> 
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="modalId">Armstrong Way</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <p>Neil Armstrong was the first man to walk on the moon.</p>
+                        <p> He was American , before he was a astronaut he was an engineer , a naval aviator , a test pilot and a university professor.</p>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Neil_Armstrong_pose.jpg/377px-Neil_Armstrong_pose.jpg">
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>  
-        </div>
+              </div>  
+          </div>
   
     
-        <!--Beaver Way  !-->
-      <div class="row">
-            <div class="card" >
-              <a href="#" data-toggle="modal" data-target="#beaverModal">
-              <img class="card-img" src="images/beaver.jpg" alt="Beaver Way">
-              </a>
-            </div>
-            <div class="modal fade" id="beaverModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"> 
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="modalId">Beaver Way</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      <p>Beaver Way is named after the de Havilland Canada DHC-2 Beaver, a single-engined high-wing propeller-driven short takeoff and landing (STOL) aircraft developed and manufactured by aircraft company de Havilland Canada. It has been primarily operated as a bush plane and has been used for wide variety of utility roles, such as cargo and passenger hauling, aerial application (crop dusting and aerial topdressing), and civil aviation duties.</p>
-                       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/VH-IDO_De_Havilland_Canada_DHC-2_Beaver_Mk1_Airwaves_Gold_Coast_%288402101541%29.jpg/320px-VH-IDO_De_Havilland_Canada_DHC-2_Beaver_Mk1_Airwaves_Gold_Coast_%288402101541%29.jpg">
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    </div>
-                  </div>
+          <!--Beaver Way  !-->
+          <div class="row">
+                <div class="card" >
+                  <a href="#" data-toggle="modal" data-target="#beaverModal">
+                  <img class="card-img" src="images/beaver.jpg" alt="Beaver Way">
+                  </a>
                 </div>
-              </div>
-            </div>  
-      </div>
-
-        <!--Blanchard Close !-->
-      <div class="row">
-          <div class="card" >
-            <a href="#" data-toggle="modal" data-target="#blanchardModal">
-            <img class="card-img" src="images/blanchard.jpg" alt="Blanchard Close">
-            </a>
+                <div class="modal fade" id="beaverModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"> 
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="modalId">Beaver Way</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <p>Beaver Way is named after the de Havilland Canada DHC-2 Beaver, a single-engined high-wing propeller-driven short takeoff and landing (STOL) aircraft developed and manufactured by aircraft company de Havilland Canada. It has been primarily operated as a bush plane and has been used for wide variety of utility roles, such as cargo and passenger hauling, aerial application (crop dusting and aerial topdressing), and civil aviation duties.</p>
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/VH-IDO_De_Havilland_Canada_DHC-2_Beaver_Mk1_Airwaves_Gold_Coast_%288402101541%29.jpg/320px-VH-IDO_De_Havilland_Canada_DHC-2_Beaver_Mk1_Airwaves_Gold_Coast_%288402101541%29.jpg">
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                </div>  
           </div>
-          <div class="modal fade" id="blanchardModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"> 
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="titleId">Blanchard Close</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <p>Jean-Pierre Blanchard pioneered hot air ballooning.</p>
-                    </p> He made his first succsesful balloon flight in Paris 1784.</p>
-                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Jean_Pierre_Blanchard.jpg/212px-Jean_Pierre_Blanchard.jpg">
-                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Early_flight_02562u_%287%29.jpg/328px-Early_flight_02562u_%287%29.jpg">
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  </div>
-                </div>
+
+          <!--Blanchard Close !-->
+          <div class="row">
+              <div class="card" >
+                <a href="#" data-toggle="modal" data-target="#blanchardModal">
+                <img class="card-img" src="images/blanchard.jpg" alt="Blanchard Close">
+                </a>
               </div>
-          </div>  
-      </div>
+              <div class="modal fade" id="blanchardModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"> 
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="titleId">Blanchard Close</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <p>Jean-Pierre Blanchard pioneered hot air ballooning.</p>
+                        </p> He made his first succsesful balloon flight in Paris 1784.</p>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Jean_Pierre_Blanchard.jpg/212px-Jean_Pierre_Blanchard.jpg">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Early_flight_02562u_%287%29.jpg/328px-Early_flight_02562u_%287%29.jpg">
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+              </div>  
+          </div>
  
-        <!--Hurricane Way  !-->
-        <div class="row">
-          <div class="card" >
-            <a href="#" data-toggle="modal" data-target="#hurricaneModal">
-            <img class="card-img" src="images/hurricane.jpg" alt="Hurricane Way">
-            </a>
-          </div>
-          <div class="modal fade" id="hurricaneModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"> 
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="titleId">Hurricane Way</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    </p> The Hawker Hurricane is a British single-seat fighter aircraft of the 1930s–1940s that was designed and predominantly built by Hawker Aircraft Ltd for the Royal Air Force (RAF).</p>
-                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Hurricane_mk1_r4118_fairford_arp.jpg/320px-Hurricane_mk1_r4118_fairford_arp.jpg">
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  </div>
-                </div>
-              </div>
-          </div>  
-      </div>
-      
-        
-        <!--Kittiwake Close !-->
-        <div class="row">
+          <!--Hurricane Way  !-->
+          <div class="row">
             <div class="card" >
-              <a href="#" data-toggle="modal" data-target="#kittiwakeModal">
-              <img class="card-img" src="images/kittiwake.jpg" alt="Kittiwake Close">
+              <a href="#" data-toggle="modal" data-target="#hurricaneModal">
+              <img class="card-img" src="images/hurricane.jpg" alt="Hurricane Way">
               </a>
             </div>
-            <div class="modal fade" id="kittiwakeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"> 
+            <div class="modal fade" id="hurricaneModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"> 
                 <div class="modal-dialog" role="document">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="titleId">Kittiwake Close</h5>
+                      <h5 class="modal-title" id="titleId">Hurricane Way</h5>
                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                       </button>
                     </div>
                     <div class="modal-body">
-                      </p> The Kittiwake was a small two seater aircraft designed for amateur building. It was created by Mitchell-Procter.</p>
-                       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Mitchell_Kittiwake_1_G-ATXN_ABIN_11.05.03R_edited-2.jpg/320px-Mitchell_Kittiwake_1_G-ATXN_ABIN_11.05.03R_edited-2.jpg">
+                      </p> The Hawker Hurricane is a British single-seat fighter aircraft of the 1930s–1940s that was designed and predominantly built by Hawker Aircraft Ltd for the Royal Air Force (RAF).</p>
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Hurricane_mk1_r4118_fairford_arp.jpg/320px-Hurricane_mk1_r4118_fairford_arp.jpg">
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+            </div>  
+          </div>
+        
+          <!--Kittiwake Close !-->
+          <div class="row">
+              <div class="card" >
+                <a href="#" data-toggle="modal" data-target="#kittiwakeModal">
+                <img class="card-img" src="images/kittiwake.jpg" alt="Kittiwake Close">
+                </a>
+              </div>
+              <div class="modal fade" id="kittiwakeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"> 
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="titleId">Kittiwake Close</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        </p> The Kittiwake was a small two seater aircraft designed for amateur building. It was created by Mitchell-Procter.</p>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Mitchell_Kittiwake_1_G-ATXN_ABIN_11.05.03R_edited-2.jpg/320px-Mitchell_Kittiwake_1_G-ATXN_ABIN_11.05.03R_edited-2.jpg">
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+              </div>  
+          </div>
+     
+          <!--Mitchell  !-->
+          <div class="row">
+            <div class="card" >
+              <a href="#" data-toggle="modal" data-target="#mitchellModal">
+              <img class="card-img" src="images/mitchell.jpg" alt="Mitchell Way">
+              </a>
+            </div>
+            <div class="modal fade" id="mitchellModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"> 
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="titleId">Mitchell Way</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Reginald Mitchell was an aeronautical engineer who worked for Supermarine Aviation. </p>
+                      <p>He is best remembered for his racing seaplanes, which culminated in the Supermarine S.6B, and the iconic Second World War fighter, the Supermarine Spitfire.</p>
+                      <p>Mitchell's career was dramatized in the biographical film, The First of the Few (1942). He was portrayed by Leslie Howard, who also produced and directed the film, released in the United States as Spitfire (1943).</p>
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Reginald_Mitchell_Spitfire_designer.jpg">
                     </div>
                     <div class="modal-footer">
                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -222,215 +253,183 @@
                   </div>
                 </div>
             </div>  
-        </div>
-     
-        <!--Mitchell  !-->
-        <div class="row">
-          <div class="card" >
-            <a href="#" data-toggle="modal" data-target="#mitchellModal">
-            <img class="card-img" src="images/mitchell.jpg" alt="Mitchell Way">
-            </a>
           </div>
-          <div class="modal fade" id="mitchellModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"> 
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="titleId">Mitchell Way</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <p>Reginal Mitchell was an aeronautical engineer who worked for Supermarine Aviation. </p>
-                    <p>He is best remembered for his racing seaplanes, which culminated in the Supermarine S.6B, and the iconic Second World War fighter, the Supermarine Spitfire.</p>
-                    <p>Mitchell's career was dramatized in the biographical film, The First of the Few (1942). He was portrayed by Leslie Howard, who also produced and directed the film, released in the United States as Spitfire (1943).</p>
-                     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Reginald_Mitchell_Spitfire_designer.jpg">
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  </div>
-                </div>
-              </div>
-          </div>  
-        </div>
 
-        <!--Scott Close  !-->
-        <div class="row">
-          <div class="card" >
-            <a href="#" data-toggle="modal" data-target="#scottModal">
-            <img class="card-img" src="images/scott.jpg" alt="Scott Close">
-            </a>
-          </div>
-          <div class="modal fade" id="scottModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"> 
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="titleId">Scott Close</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    </p> Sheila Scott was a famous British pilot, she was a demonstator for Cessna and Piper. </p>
-                     <p> Scott broke over 100 aviation records between 1965 and 1972; from being the first British person to fly over the North Pole in a small aircraft to being the first British pilot to fly solo across the world. Scott passed away in 1988 but she has left a lasting legacy for British women interested in aviation. </p>
-                     <img src="http://www.pilotweb.aero/polopoly_fs/1.4130849!/image/image.jpg_gen/derivatives/landscape_630/image.jpg">
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <!--Scott Close  !-->
+          <div class="row">
+            <div class="card" >
+              <a href="#" data-toggle="modal" data-target="#scottModal">
+              <img class="card-img" src="images/scott.jpg" alt="Scott Close">
+              </a>
+            </div>
+            <div class="modal fade" id="scottModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"> 
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="titleId">Scott Close</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <p> Sheila Scott was a famous British pilot, she was a demonstator for Cessna and Piper. </p>
+                      <p> Scott broke over 100 aviation records between 1965 and 1972; from being the first British person to fly over the North Pole in a small aircraft to being the first British pilot to fly solo across the world. Scott passed away in 1988 but she has left a lasting legacy for British women interested in aviation. </p>
+                      <img src="http://www.pilotweb.aero/polopoly_fs/1.4130849!/image/image.jpg_gen/derivatives/landscape_630/image.jpg">
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
                   </div>
                 </div>
-              </div>
-          </div>  
-        </div>
+            </div>  
+          </div>
       
-         
-        <!--Shackleton Way  !-->
-        <div class="row">
-          <div class="card" >
-            <a href="#" data-toggle="modal" data-target="#shackletonModal">
-            <img class="card-img" src="images/shackleton.jpg" alt="Shackleton Way">
-            </a>
-          </div>
-          <div class="modal fade" id="shackletonModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"> 
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="titleId">Shackleton Way</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    </p> The Avro Shackleton was a British long-range maritime patrol aircraft.</p>
-                    <p>The Shackleton was developed during the late 1940s as part of Britain's military response to the rapid expansion of the Soviet Navy, in particular its submarine force.</p>
-                     <img src="https://upload.wikimedia.org/wikipedia/commons/7/76/Avro_Shackleton_MR3_in_flight_c1955.jpg">
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <!--Shackleton Way  !-->
+          <div class="row">
+            <div class="card" >
+              <a href="#" data-toggle="modal" data-target="#shackletonModal">
+              <img class="card-img" src="images/shackleton.jpg" alt="Shackleton Way">
+              </a>
+            </div>
+            <div class="modal fade" id="shackletonModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"> 
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="titleId">Shackleton Way</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <p> The Avro Shackleton was a British long-range maritime patrol aircraft.</p>
+                      <p>The Shackleton was developed during the late 1940s as part of Britain's military response to the rapid expansion of the Soviet Navy, in particular its submarine force.</p>
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/7/76/Avro_Shackleton_MR3_in_flight_c1955.jpg">
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
                   </div>
                 </div>
-              </div>
-          </div>  
-        </div>
+            </div>  
+          </div>
 
-        <!--Tiger  !-->
-        <div class="row">
-          <div class="card" >
-            <a href="#" data-toggle="modal" data-target="#tigerModal">
-            <img class="card-img" src="images/tiger.jpg" alt="Tiger Close">
-            </a>
-          </div>
-          <div class="modal fade" id="tigerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"> 
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="titleId">Tiger Close</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    </p>The de Havilland DH.82 Tiger Moth is a 1930s biplane designed by Geoffrey de Havilland and built by the de Havilland Aircraft Company.</p>
-                    <p>The Tiger Moth remained in service with the RAF until it was succeeded and replaced by the de Havilland Chipmunk during the early 1950s.</p>
-                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/DH_82A_Tiger_Moth_-_N81DH.jpg/320px-DH_82A_Tiger_Moth_-_N81DH.jpg">
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <!--Tiger  !-->
+          <div class="row">
+            <div class="card" >
+              <a href="#" data-toggle="modal" data-target="#tigerModal">
+              <img class="card-img" src="images/tiger.jpg" alt="Tiger Close">
+              </a>
+            </div>
+            <div class="modal fade" id="tigerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"> 
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="titleId">Tiger Close</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <p>The de Havilland DH.82 Tiger Moth is a 1930s biplane designed by Geoffrey de Havilland and built by the de Havilland Aircraft Company.</p>
+                      <p>The Tiger Moth remained in service with the RAF until it was succeeded and replaced by the de Havilland Chipmunk during the early 1950s.</p>
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/DH_82A_Tiger_Moth_-_N81DH.jpg/320px-DH_82A_Tiger_Moth_-_N81DH.jpg">
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
                   </div>
                 </div>
-              </div>
-          </div>  
-        </div>
+            </div>  
+          </div>
         
-        <!--Victor  !-->
-        <div class="row">
-          <div class="card" >
-            <a href="#" data-toggle="modal" data-target="#victorModal">
-            <img class="card-img" src="images/victor.jpg" alt="Victor Way">
-            </a>
-          </div>
-          <div class="modal fade" id="victorModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"> 
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="titleId">Victor Way</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <p> The Handley Page Victor was a British jet-powered strategic bomber, developed and produced by the Handley Page Aircraft Company, which served during the Cold War.</p>
-                    <p>The Victor had been developed to perform as part of the United Kingdom’s airborne nuclear deterrent. In 1968, the type was retired from the nuclear mission following the discovery of fatigue cracks, which had been exacerbated by the RAF's adoption of a low-altitude flight profile to avoid interception.</p>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Raf_victor_in_1961_arp.jpg/320px-Raf_victor_in_1961_arp.jpg">
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <!--Victor  !-->
+          <div class="row">
+            <div class="card" >
+              <a href="#" data-toggle="modal" data-target="#victorModal">
+              <img class="card-img" src="images/victor.jpg" alt="Victor Way">
+              </a>
+            </div>
+            <div class="modal fade" id="victorModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"> 
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="titleId">Victor Way</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <p> The Handley Page Victor was a British jet-powered strategic bomber, developed and produced by the Handley Page Aircraft Company, which served during the Cold War.</p>
+                      <p>The Victor had been developed to perform as part of the United Kingdom’s airborne nuclear deterrent. In 1968, the type was retired from the nuclear mission following the discovery of fatigue cracks, which had been exacerbated by the RAF's adoption of a low-altitude flight profile to avoid interception.</p>
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Raf_victor_in_1961_arp.jpg/320px-Raf_victor_in_1961_arp.jpg">
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
                   </div>
                 </div>
-              </div>
-          </div>  
-        </div>
+            </div>  
+          </div>
 
-        <!--Bader  !-->
-        <div class="row">
-          <div class="card" >
-            <a href="#" data-toggle="modal" data-target="#baderModal">
-            <img class="card-img" src="images/bader.jpg" alt="Bader Way">
-            </a>
-          </div>
-          <div class="modal fade" id="baderModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"> 
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="titleId">Bader Way</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    </p>Douglas Bader also known as Sir Douglas Robert steuart Bader , who fought in WW2 as a jet fighter , was a pilot who crashed down in woodley , losing both of his legs.Bader joind the RAF in 1928 , after he crashed he was on the brink of death , but still joined the RAF once more and returned as a pilot.</p>
-                    
-                     <img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Douglas_Bader_headshot.jpg">
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <!--Bader  !-->
+          <div class="row">
+            <div class="card" >
+              <a href="#" data-toggle="modal" data-target="#baderModal">
+              <img class="card-img" src="images/bader.jpg" alt="Bader Way">
+              </a>
+            </div>
+            <div class="modal fade" id="baderModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"> 
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="titleId">Bader Way</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Douglas Bader also known as Sir Douglas Robert steuart Bader , who fought in WW2 as a jet fighter , was a pilot who crashed down in woodley , losing both of his legs.Bader joind the RAF in 1928 , after he crashed he was on the brink of death , but still joined the RAF once more and returned as a pilot.</p>        
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Douglas_Bader_headshot.jpg">
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
                   </div>
                 </div>
-              </div>
-          </div>  
-        </div>
+            </div>  
+          </div>
 
-        <!--Wright  !-->
-        <div class="row">
-          <div class="card" >
-            <a href="#" data-toggle="modal" data-target="#wrightModal">
-            <img class="card-img" src="images/wright.jpg" alt="Wright Close">
-            </a>
-          </div>
-          <div class="modal fade" id="wrightModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"> 
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="titleId">Wright Close</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <p>The Wright Brothers , Orville and Wilbur Wright , created the first sucssesful  flying machine . Orville was born in 1871 and died at the age of 76 , Wilbur, however, was born in 1867 and died at the age of 45.</p>
-                    
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Orville_Wright_1905-crop.jpg/384px-Orville_Wright_1905-crop.jpg">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Wilbur_Wright-crop.jpg/384px-Wilbur_Wright-crop.jpg">
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <!--Wright  !-->
+          <div class="row">
+            <div class="card" >
+              <a href="#" data-toggle="modal" data-target="#wrightModal">
+              <img class="card-img" src="images/wright.jpg" alt="Wright Close">
+              </a>
+            </div>
+            <div class="modal fade" id="wrightModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"> 
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="titleId">Wright Close</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <p>The Wright Brothers , Orville and Wilbur Wright , created the first sucssesful  flying machine . Orville was born in 1871 and died at the age of 76 , Wilbur, however, was born in 1867 and died at the age of 45.</p>
+                      
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Orville_Wright_1905-crop.jpg/384px-Orville_Wright_1905-crop.jpg">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Wilbur_Wright-crop.jpg/384px-Wilbur_Wright-crop.jpg">
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
                   </div>
                 </div>
-              </div>
-          </div>  
-        </div>
+            </div>  
+          </div>
     
-      </div>
+        </div>
       
       </div>
     </main>
@@ -440,8 +439,6 @@
         <p class="float-right">
           <a href="#">Back to top</a>
         </p>
-        <p>Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
-        <p>New to Bootstrap? <a href="../../">Visit the homepage</a> or read our <a href="../../getting-started/">getting started guide</a>.</p>
       </div>
     </footer>
 
