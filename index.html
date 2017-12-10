@@ -68,6 +68,8 @@
                 var wrightURL = {lat: 51.451377, lng: -0.889528}; 
                 var catalinaURL = {lat: 51.454085, lng: -0.880538};
                 var blanchardURL = {lat: 51.457915, lng: -0.883080 };
+                var lysanderURL = {lat: 51.455529, lng: -0.885838}; 
+                var mohawkURL = {lat: 51.451537, lng: -0.883316}; 
                 var map = new google.maps.Map(document.getElementById('map'), {
                   zoom: 16,
                   center: beaverURL
@@ -97,6 +99,16 @@
                   title: 'Blanchard Close',
                   map: map
                 });
+                var markerLysander = new google.maps.Marker({
+                  position: lysanderURL,
+                  title: 'Lysander Close',
+                  map: map
+                });
+                var markerMohawk = new google.maps.Marker({
+                  position: mohawkURL,
+                  title: 'Mohawk Way',
+                  map: map
+                });
 
                 markerArmstrong.addListener('click', function() {
                   $('#armstrongModal').modal('show')  
@@ -112,6 +124,12 @@
                 });
                 markerCatalina.addListener('click', function() {
                   $('#catalinaModal').modal('show')  
+                });
+                markerLysander.addListener('click', function() {
+                  $('#lysanderModal').modal('show')  
+                });
+                markerMohawk.addListener('click', function() {
+                  $('#mohawkModal').modal('show')  
                 });
               }
 
@@ -147,7 +165,6 @@
                   </div>
               </div>  
           </div>
-  
     
           <!--Beaver Way  !-->
           <div class="row">
@@ -289,6 +306,35 @@
               </div>  
           </div>
      
+          <!--Lysander Close !-->
+          <div class="row">
+              <div class="card" >
+                <a href="#" data-toggle="modal" data-target="#lysanderModal">
+                <img class="card-img" src="images/lysander.jpg" alt="Lysander Close">
+                </a>
+              </div>
+              <div class="modal fade" id="lysanderModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"> 
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="titleId">Lysander Close</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <p> The Westland Lysander (nickname the 'Lizzie') is a British army co-operation and liaison aircraft produced by Westland Aircraft used immediately before and during the Second World War. </p>
+                        <p>On June 15, 1936, the prototype Westland Lysander made its maiden flight. It was an odd-looking plane, with a braced high wing, a separate rear cockpit for an observer/gunner, fixed landing gear with large, streamlined wheel fairings called “spats,” and a massive air-cooled radial engine driving a three-bladed propeller. The RAF named army cooperation types for ancient heroes; so Lysander carried the name of a Spartan general (died 395 BC) who defeated Athens’ fleet in the Peloponnesian War.</p>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Lysander_5_Aug_2012_a.jpg/297px-Lysander_5_Aug_2012_a.jpg">
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+              </div>  
+          </div>
+
           <!--Mitchell  !-->
           <div class="row">
             <div class="card" >
@@ -319,6 +365,36 @@
             </div>  
           </div>
 
+          <!--Mohawk  !-->
+          <div class="row">
+            <div class="card" >
+              <a href="#" data-toggle="modal" data-target="#mohawkModal">
+              <img class="card-img" src="images/mohawk.jpg" alt="Mohawk Way">
+              </a>
+            </div>
+            <div class="modal fade" id="mohawkModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"> 
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="titleId">Mohawk Way</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <p>The Grumman OV-1 Mohawk was an armed military observation and attack aircraft, designed for battlefield surveillance and light strike capabilities. It was a twin turboprop configuration, and carried two crew members in side-by-side seating.  </p>
+                            <p>First flown on April 14, 1959, and conceived for joint use by the US Army and US Marine Corps before the Marines dropped out of the program, the bug-eyed, twin turboprop, triple-tail, mid-wing Mohawk was known as the AO-1 until the military designation system was changed on Oct. 1, 1962 to make it the OV-1.</p>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/OV1.890InFlightStanleyCounty_%28modified%29.jpg/320px-OV1.890InFlightStanleyCounty_%28modified%29.jpg">
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                  </div>  
+            </div>
+          </div>
+            
           <!--Scott Close  !-->
           <div class="row">
             <div class="card" >
