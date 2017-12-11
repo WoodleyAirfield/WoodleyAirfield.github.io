@@ -63,6 +63,7 @@
           <div id="map">
               <script>
               function initMap() {
+                var centreURL = {lat: 51.453296, lng: -0.884933}; 
                 var armstrongURL = {lat: 51.452019, lng: -0.888252}; 
                 var beaverURL = {lat: 51.452010, lng: -0.882972}; 
                 var wrightURL = {lat: 51.451377, lng: -0.889528}; 
@@ -70,9 +71,12 @@
                 var blanchardURL = {lat: 51.457915, lng: -0.883080 };
                 var lysanderURL = {lat: 51.455529, lng: -0.885838}; 
                 var mohawkURL = {lat: 51.451537, lng: -0.883316}; 
+                var mitchellURL = {lat: 51.451891, lng: -0.885091};
+                var baderURL = {lat: 51.450459, lng: -0.884180};
+                var milesURL = {lat: 51.451261, lng: -0.886573};
                 var map = new google.maps.Map(document.getElementById('map'), {
                   zoom: 16,
-                  center: beaverURL
+                  center: centreURL
                 });
                 var markerArmstrong = new google.maps.Marker({
                   position: armstrongURL,
@@ -109,6 +113,21 @@
                   title: 'Mohawk Way',
                   map: map
                 });
+                var markerMitchell = new google.maps.Marker({
+                  position: mitchellURL,
+                  title: 'Mitchell Way',
+                  map: map
+                });
+                var markerBader = new google.maps.Marker({
+                  position: baderURL,
+                  title: 'The Bader Way',
+                  map: map
+                });
+                var markerMiles = new google.maps.Marker({
+                  position: milesURL,
+                  title: 'Miles Way',
+                  map: map
+                });
 
                 markerArmstrong.addListener('click', function() {
                   $('#armstrongModal').modal('show')  
@@ -130,6 +149,15 @@
                 });
                 markerMohawk.addListener('click', function() {
                   $('#mohawkModal').modal('show')  
+                });
+                markerMitchell.addListener('click', function() {
+                  $('#mitchellModal').modal('show')  
+                });
+                markerBader.addListener('click', function() {
+                  $('#baderModal').modal('show')  
+                });
+                markerMiles.addListener('click', function() {
+                  $('#milesModal').modal('show')  
                 });
               }
 
@@ -166,6 +194,36 @@
               </div>  
           </div>
     
+          
+          <!--Bader  !-->
+          <div class="row">
+            <div class="card" >
+              <a href="#" data-toggle="modal" data-target="#baderModal">
+              <img class="card-img" src="images/bader.jpg" alt="Bader Way">
+              </a>
+            </div>
+            <div class="modal fade" id="baderModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"> 
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="titleId">Bader Way</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Douglas Bader also known as Sir Douglas Robert steuart Bader, who fought in WW2 as a jet fighter, was a pilot who crashed down in Woodley, losing both of his legs. Bader joined the RAF in 1928, after he crashed he was on the brink of death, but still joined the RAF once more and returned as a pilot.</p>        
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Douglas_Bader_headshot.jpg">
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+            </div>  
+          </div>
+
+          
           <!--Beaver Way  !-->
           <div class="row">
                 <div class="card" >
@@ -334,6 +392,36 @@
                   </div>
               </div>  
           </div>
+
+          <!--Miles Way  !-->
+          <div class="row">
+              <div class="card" >
+                <a href="#" data-toggle="modal" data-target="#milesModal">
+                <img class="card-img" src="images/miles.jpg" alt="Miles Way">
+                </a>
+              </div>
+              <div class="modal fade" id="milesModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"> 
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="titleId">Miles Way</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <p>Miles Aircraft Limited was based at Woodley Aerodrome </p>
+                        <p>Frederic George Miles started making aircraft in Shoreham, Sussex. His first plane was called the Gnat.</p>
+                        <p>In 1932 he joined forces with Charles Powis, who had an aircraft business in Woodley. They started to manufacture the Miles M.2 Hawk, with many subsequent planes following.  </p>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Miles_M.20.jpg">
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+              </div>  
+            </div>
 
           <!--Mitchell  !-->
           <div class="row">
@@ -511,33 +599,7 @@
             </div>  
           </div>
 
-          <!--Bader  !-->
-          <div class="row">
-            <div class="card" >
-              <a href="#" data-toggle="modal" data-target="#baderModal">
-              <img class="card-img" src="images/bader.jpg" alt="Bader Way">
-              </a>
-            </div>
-            <div class="modal fade" id="baderModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"> 
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="titleId">Bader Way</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      <p>Douglas Bader also known as Sir Douglas Robert steuart Bader, who fought in WW2 as a jet fighter, was a pilot who crashed down in Woodley, losing both of his legs. Bader joined the RAF in 1928, after he crashed he was on the brink of death, but still joined the RAF once more and returned as a pilot.</p>        
-                      <img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Douglas_Bader_headshot.jpg">
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    </div>
-                  </div>
-                </div>
-            </div>  
-          </div>
+          
 
           <!--Wright  !-->
           <div class="row">
