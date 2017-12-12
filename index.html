@@ -73,6 +73,7 @@
                 var mitchellURL = {lat: 51.451891, lng: -0.885091};
                 var baderURL = {lat: 51.450459, lng: -0.884180};
                 var milesURL = {lat: 51.451261, lng: -0.886573};
+                var orvilleURL = {lat: 51.451026, lng: -0.888681}; 
                 var map = new google.maps.Map(document.getElementById('map'), {
                   zoom: 16,
                   center: centreURL
@@ -127,6 +128,12 @@
                   title: 'Miles Way',
                   map: map
                 });
+                var markerOrville = new google.maps.Marker({
+                  position: orvilleURL,
+                  title: 'Orville Close',
+                  map: map
+                });
+
 
                 markerArmstrong.addListener('click', function() {
                   $('#armstrongModal').modal('show')  
@@ -157,6 +164,9 @@
                 });
                 markerMiles.addListener('click', function() {
                   $('#milesModal').modal('show')  
+                });
+                markerOrville.addListener('click', function() {
+                  $('#orvilleModal').modal('show')  
                 });
               }
 
@@ -426,6 +436,7 @@
               </div>  
             </div>
 
+
           <!--Mitchell  !-->
           <div class="row">
             <div class="card" >
@@ -485,7 +496,37 @@
               </div>
           </div>
         
-            
+          <!--Orville  !-->
+          <div class="row">
+              <div class="card" >
+                <a href="#" data-toggle="modal" data-target="#orvilleModal">
+                <img class="card-img" src="images/orville.jpg" alt="Orville Close">
+                </a>
+              </div>
+              <div class="modal fade" id="orvilleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"> 
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="titleId">Orville Close</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <p>Orville Wright is best known for inventing the airplane with his brother, Wilbur </p>
+                              <p>Born in Dayton, Ohio, in 1871, Orville Wright and his elder brother, Wilbur Wright, were the inventors of the world's first successful airplane. The brothers successfully conducted the first free, controlled flight of a power-driven airplane on December 17, 1903.</p>
+                              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Wright1901GliderBottom.jpg/320px-Wright1901GliderBottom.jpg">
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                      </div>  
+                    </div>
+              </div>
+          </div>
+
+
+          
           <!--Scott Close  !-->
           <div class="row">
             <div class="card" >
