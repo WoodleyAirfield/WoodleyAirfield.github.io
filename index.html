@@ -74,6 +74,7 @@
                 var baderURL = {lat: 51.450459, lng: -0.884180};
                 var milesURL = {lat: 51.451261, lng: -0.886573};
                 var orvilleURL = {lat: 51.451026, lng: -0.888681}; 
+                var cometURL = {lat: 51.452611, lng: -0.886589};
                 var map = new google.maps.Map(document.getElementById('map'), {
                   zoom: 16,
                   center: centreURL
@@ -133,6 +134,11 @@
                   title: 'Orville Close',
                   map: map
                 });
+                var markerComet = new google.maps.Marker({
+                  position: cometURL,
+                  title: 'Comet Way',
+                  map: map
+                });
 
 
                 markerArmstrong.addListener('click', function() {
@@ -167,6 +173,9 @@
                 });
                 markerOrville.addListener('click', function() {
                   $('#orvilleModal').modal('show')  
+                });
+                markerComet.addListener('click', function() {
+                  $('#cometModal').modal('show')  
                 });
               }
 
@@ -319,6 +328,39 @@
                   </div>
               </div>  
           </div>
+
+
+          <!--Comet Way !-->
+          <div class="row">
+              <div class="card" >
+                <a href="#" data-toggle="modal" data-target="#cometModal">
+                <img class="card-img" src="images/comet.jpg" alt="Comet Way">
+                </a>
+              </div>
+              <div class="modal fade" id="cometModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"> 
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="titleId">Comet Way</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <p>The de Havilland DH 106 Comet was the world's first commercial jetliner. </p>
+                        <p>Sir Geoffrey de Havilland conceived the idea of the DH106 'Comet' in 1943 and design work began in September 1946. The prototype first flew on 27 July 1949.</p>
+                        <p>The Comet was redesigned as the Comet 4 and flew again in 1958. This aircraft became the first to offer a scheduled Trans-Atlantic service and 113 were made before production ceased in 1968.</p>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/BEA_de_Havilland_DH-106_Comet_4B_Berlin.jpg/320px-BEA_de_Havilland_DH-106_Comet_4B_Berlin.jpg">
+                       
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+              </div>  
+          </div>
+
 
 
           <!--Hurricane Way  !-->
